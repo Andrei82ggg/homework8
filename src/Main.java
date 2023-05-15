@@ -8,6 +8,21 @@ public class Main {
         task2();
         System.out.println();
 
+        task3();
+        System.out.println();
+
+        task4();
+        System.out.println();
+    }
+
+    private static void task4() {
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
+    }
+
+    private static void task3() {
         int[] arr = generateRandomArray();
         System.out.println(Arrays.toString(arr));
         int sum = 0;

@@ -12,10 +12,10 @@ public class Main {
         System.out.println(Arrays.toString(arr));
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            sum+= arr[i];
+            sum += arr[i];
         }
         double average = (double) sum / arr.length;
-        System.out.println("Средняя сумма трат за месяц составила "+average+" рублей");
+        System.out.printf("Средняя сумма трат за месяц составила %.2f", average);
     }
 
     private static void task2() {
@@ -23,14 +23,14 @@ public class Main {
         int min = arr[0];
         int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i]>max){
+            if (arr[i] > max) {
                 max = arr[i];
             }
-            if (arr[i]<min){
+            if (arr[i] < min) {
                 min = arr[i];
             }
         }
-        System.out.println("Минимальная сумма трат за день составила "+min+" рублей. Максимальная сумма трат за день составила "+max+" рублей");
+        System.out.println("Минимальная сумма трат за день составила " + min + " рублей. Максимальная сумма трат за день составила " + max + " рублей");
     }
 
     private static void task1() {
@@ -39,7 +39,7 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             sum = sum + arr[i];
         }
-        System.out.println("Сумма трат за месяц составила "+sum+" рублей");
+        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
     }
 
 
